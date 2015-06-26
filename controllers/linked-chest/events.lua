@@ -40,6 +40,7 @@ end)
 
 game.onevent(defines.events.onguiclick, function(event)
 	gui.onguiclick(event)
+	lib.onguiclick(event)
 end)
 
 game.onevent(defines.events.onmarkedfordeconstruction, function(event)

@@ -101,11 +101,13 @@ function gui.create(player, chest)
         }
 
         -- create debug tick button
-        element.add{
-            type = 'button',
-            name = 'debug_tick_button',
-            caption = 'DEBUG: Tick Networks'
-        }
+		if glob.debug == true then
+        	element.add{
+            	type = 'button',
+            	name = 'debug_tick_button',
+            	caption = 'DEBUG: Tick Networks'
+        	}
+		end
     end
 end
 

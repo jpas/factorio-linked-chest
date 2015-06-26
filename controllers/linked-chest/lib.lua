@@ -53,6 +53,12 @@ function lib.ontick(event)
 	end
 end
 
+function lib.onguiclick(event)
+	if event.element.name == 'debug_tick_button' then
+		lib.ontick()
+	end
+end
+
 function lib.onmarkedfordeconstruction(event)
 	chest = lib.get_chest(event.entity)
 	lib.set_active_state(chest, false)
